@@ -12,6 +12,7 @@ import 'package:login_app/src/constants/color.dart';
 import 'package:login_app/src/constants/image_strings.dart';
 import 'package:login_app/src/constants/sizes.dart';
 import 'package:login_app/src/features/authentication/login/login_screen.dart';
+import 'package:login_app/src/features/authentication/signup/signup_screen.dart';
 
 import '../../../../constants/text_string.dart';
 
@@ -93,7 +94,7 @@ class WelcomeScreen extends StatelessWidget {
                       ),
                       Expanded(
                         child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () => Get.to(() => const SignUpScreen()),
                           child: Text(
                             "Sign Up".toUpperCase(),
                           ),

@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:login_app/src/constants/image_strings.dart';
 import 'package:login_app/src/constants/sizes.dart';
+import 'package:login_app/src/constants/text_string.dart';
 import 'package:login_app/src/features/authentication/login/login_form_widget.dart';
 
 import 'login_footer_widget.dart';
-import 'login_header_widget.dart';
+import '../../../common_widgets/form/form_header_widget.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -19,7 +21,10 @@ class LoginScreen extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                LoginHeaderWidget(size: size),
+                FormHeaderWidget(
+                    image: tWelcomeImage1,
+                    title: tLoginTitle,
+                    subTitle: tLoginSubTitle),
                 const LoginForm(),
                 const LoginFooterWidget()
               ],
