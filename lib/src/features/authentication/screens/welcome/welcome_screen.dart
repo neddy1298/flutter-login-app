@@ -3,6 +3,7 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/instance_manager.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:login_app/src/common_widgets/fade_in_animation/animation_design.dart';
 import 'package:login_app/src/common_widgets/fade_in_animation/fade_in_animation_controller.dart';
 import 'package:login_app/src/common_widgets/fade_in_animation/fade_in_animation_model.dart';
@@ -42,19 +43,60 @@ class WelcomeScreen extends StatelessWidget {
               rightBefore: 0,
             ),
             child: Container(
-              padding: const EdgeInsets.all(tDefaultSize),
+              padding: EdgeInsets.all(tDefaultSize),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Image(
                     image: const AssetImage(tWelcomeImage1),
-                    height: height * 0.6,
+                    height: height * 0.5,
                   ),
                   Column(
                     children: [
                       Text(
                         tWelcomeTitle,
-                      )
+                        style: GoogleFonts.roboto(
+                          textStyle: Theme.of(context).textTheme.headline3,
+                          color: isDarkMode ? tWhiteColor : tSecondaryColor,
+                          // fontStyle: FontStyle.italic,
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                      Padding(
+                        padding: EdgeInsets.only(top: 30.0),
+                      ),
+                      Text(
+                        tWelcomeSubTitle,
+                        style: GoogleFonts.roboto(
+                          textStyle: Theme.of(context).textTheme.bodyText1,
+                          color: isDarkMode ? tWhiteColor : tSecondaryColor,
+                          // fontStyle: FontStyle.italic,
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Expanded(
+                        child: OutlinedButton(
+                          onPressed: () {},
+                          child: Text(
+                            "Login".toUpperCase(),
+                          ),
+                        ),
+                      ),
+                      const SizedBox(
+                        width: 10.0,
+                      ),
+                      Expanded(
+                        child: ElevatedButton(
+                          onPressed: () {},
+                          child: Text(
+                            "Sign Up".toUpperCase(),
+                          ),
+                        ),
+                      ),
                     ],
                   ),
                 ],

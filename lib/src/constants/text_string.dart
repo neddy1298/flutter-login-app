@@ -26,3 +26,4 @@ const String tOnBoardingCounter4 = "4/4";
 const String tWelcomeTitle = "Build Awesome Apps";
 const String tWelcomeSubTitle =
     "Lets's put your creative on the development highway";
+
