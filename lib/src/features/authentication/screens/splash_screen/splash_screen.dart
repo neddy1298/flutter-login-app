@@ -20,7 +20,12 @@ class SplashScreen extends StatelessWidget {
     final controller = Get.put(FadeInAnimationController());
     controller.startSplashAnimation();
 
+    var mediaQuery = MediaQuery.of(context);
+    var brightness = mediaQuery.platformBrightness;
+    final isDarkMode = brightness == Brightness.dark;
+
     return Scaffold(
+      backgroundColor: isDarkMode ? tSecondaryColor : tPrimaryColor,
       body: Stack(
         // ignore: sort_child_properties_last
         children: [
@@ -42,6 +47,7 @@ class SplashScreen extends StatelessWidget {
                       textStyle: Theme.of(context).textTheme.headline3,
                       fontSize: 30,
                       fontWeight: FontWeight.w700,
+                      color: isDarkMode ? tWhiteColor : tSecondaryColor,
                       // fontStyle: FontStyle.italic,
                     ),
                   ),
@@ -51,6 +57,7 @@ class SplashScreen extends StatelessWidget {
                       textStyle: Theme.of(context).textTheme.headline2,
                       fontSize: 40,
                       fontWeight: FontWeight.w700,
+                      color: isDarkMode ? tWhiteColor : tSecondaryColor,
                       // fontStyle: FontStyle.italic,
                     ),
                   ),
