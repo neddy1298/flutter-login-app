@@ -3,6 +3,7 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/instance_manager.dart';
+import 'package:get/route_manager.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:login_app/src/common_widgets/fade_in_animation/animation_design.dart';
 import 'package:login_app/src/common_widgets/fade_in_animation/fade_in_animation_controller.dart';
@@ -10,6 +11,7 @@ import 'package:login_app/src/common_widgets/fade_in_animation/fade_in_animation
 import 'package:login_app/src/constants/color.dart';
 import 'package:login_app/src/constants/image_strings.dart';
 import 'package:login_app/src/constants/sizes.dart';
+import 'package:login_app/src/features/authentication/login/login_screen.dart';
 
 import '../../../../constants/text_string.dart';
 
@@ -80,7 +82,7 @@ class WelcomeScreen extends StatelessWidget {
                     children: [
                       Expanded(
                         child: OutlinedButton(
-                          onPressed: () {},
+                          onPressed: () => Get.to(() => const LoginScreen()),
                           child: Text(
                             "Login".toUpperCase(),
                           ),
