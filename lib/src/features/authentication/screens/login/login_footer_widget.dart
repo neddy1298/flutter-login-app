@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
-import 'package:login_app/src/features/authentication/signup/signup_screen.dart';
+import 'package:login_app/src/features/authentication/screens/signup/signup_screen.dart';
 
-import '../../../constants/image_strings.dart';
-import '../../../constants/sizes.dart';
-import '../../../constants/text_string.dart';
+import '../../../../constants/image_strings.dart';
+import '../../../../constants/sizes.dart';
+import '../../../../constants/text_string.dart';
 
 class LoginFooterWidget extends StatelessWidget {
   const LoginFooterWidget({

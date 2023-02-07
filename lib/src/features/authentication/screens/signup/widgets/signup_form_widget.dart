@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../../constants/sizes.dart';
-import '../../../../constants/text_string.dart';
+import '../../../../../constants/sizes.dart';
+import '../../../../../constants/text_string.dart';
 
 class SignUpFormWidget extends StatelessWidget {
   const SignUpFormWidget({

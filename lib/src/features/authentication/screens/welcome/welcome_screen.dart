@@ -11,8 +11,8 @@ import 'package:login_app/src/common_widgets/fade_in_animation/fade_in_animation
 import 'package:login_app/src/constants/color.dart';
 import 'package:login_app/src/constants/image_strings.dart';
 import 'package:login_app/src/constants/sizes.dart';
-import 'package:login_app/src/features/authentication/login/login_screen.dart';
-import 'package:login_app/src/features/authentication/signup/signup_screen.dart';
+import 'package:login_app/src/features/authentication/screens/login/login_screen.dart';
+import 'package:login_app/src/features/authentication/screens/signup/signup_screen.dart';
 
 import '../../../../constants/text_string.dart';
 

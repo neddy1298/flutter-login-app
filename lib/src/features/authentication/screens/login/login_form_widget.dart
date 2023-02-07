@@ -1,8 +1,8 @@
-
 import 'package:flutter/material.dart';
+import 'package:login_app/src/features/authentication/screens/forget_password/forget_password_options/forget_password_model_bottom_sheet.dart';
 
-import '../../../constants/sizes.dart';
-import '../../../constants/text_string.dart';
+import '../../../../constants/sizes.dart';
+import '../../../../constants/text_string.dart';
 
 class LoginForm extends StatelessWidget {
   const LoginForm({
@@ -24,6 +24,7 @@ class LoginForm extends StatelessWidget {
                   hintText: tEmail,
                   border: OutlineInputBorder()),
             ),
+
             SizedBox(height: tFormHeight - 20),
             TextFormField(
               decoration: const InputDecoration(
@@ -38,13 +39,19 @@ class LoginForm extends StatelessWidget {
               ),
             ),
             SizedBox(height: tFormHeight - 20),
+
+            // -- Forget Password
             Align(
               alignment: Alignment.centerRight,
               child: TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  ForgetPasswordScreen.buildShowModalBottomSheet(context);
+                },
                 child: Text(tForgetPassword),
               ),
             ),
+
+            // -- Login Button
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(

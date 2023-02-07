@@ -4,7 +4,7 @@ import 'package:login_app/src/common_widgets/form/form_header_widget.dart';
 import 'package:login_app/src/constants/image_strings.dart';
 import 'package:login_app/src/constants/sizes.dart';
 import 'package:login_app/src/constants/text_string.dart';
-import 'package:login_app/src/features/authentication/login/login_screen.dart';
+import 'package:login_app/src/features/authentication/screens/login/login_screen.dart';
 
 import 'widgets/signup_form_widget.dart';
 
