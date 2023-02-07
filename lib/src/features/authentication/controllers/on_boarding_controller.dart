@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
 import 'package:liquid_swipe/PageHelpers/LiquidController.dart';
 
-import '../../../constants/color.dart';
+import '../../../constants/colors.dart';
 import '../../../constants/image_strings.dart';
 import '../../../constants/text_string.dart';
 import '../models/model_on_boarding.dart';
