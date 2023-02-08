@@ -68,3 +68,13 @@ const String tForgetMailSubTitle =
 const String tOtpTitle = "CO\nDE";
 const String tOtpSubTitle = "verification";
 const String tOtpMessage = "Enter the verification code sent at";
+
+// Dashboard Screen - Text
+const String tDahsboardTitle = "Hey, Coding With Me";
+const String tDashboardHeading = "Explore Course";
+const String tDashboardSearch = "Search...";
+const String tDashboardBannerTitle1 = "HTML for Beginners";
+const String tDashboardBannerTitle2 = "Python";
+const String tDashboardBannerSubTitle = "10 Lessons";
+const String tDashboardButton = "View All";
+const String tDashboardTopCourse = "Top Courses";
