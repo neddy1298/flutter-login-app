@@ -19,6 +19,7 @@ dependencies:
   smooth_page_indicator: ^1.0.0+2
   flutter_otp_text_field: ^1.1.1
   firebase_core: ^2.5.0
+  firebase_auth: ^4.2.6
   # flutter_native_splash: ^2.2.16
   # loading_animation_widget: ^1.2.0+4
 
