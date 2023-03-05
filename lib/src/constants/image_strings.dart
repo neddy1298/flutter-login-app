@@ -44,3 +44,5 @@ const String tDashboardBookmarkImage =
 const String tDashboardBannerImage = "assets/images/dashboard/dash-banner.png";
 
 const String tTopCourseImage = "assets/images/dashboard/dash-topCourse.png";
+
+const String tProfileImage = "assets/images/profile/profile.png";

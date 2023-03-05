@@ -17,7 +17,7 @@ class TAppTheme {
   );
 
   static ThemeData darkTheme = ThemeData(
-    brightness: Brightness.light,
+    brightness: Brightness.dark,
     textTheme: TTextTheme.darkTextTheme,
     elevatedButtonTheme: TElevatedButtonTheme.darkElevatedButtonTheme,
     outlinedButtonTheme: TOutlinedButtonTheme.darkOutlinedButtonTheme,

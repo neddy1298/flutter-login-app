@@ -5,23 +5,23 @@ import '../../../constants/colors.dart';
 class TTextFormFieldTheme {
   TTextFormFieldTheme._();
 
-  static InputDecorationTheme lightInputDecorationTheme =
-      const InputDecorationTheme(
-    border: OutlineInputBorder(),
+  static InputDecorationTheme lightInputDecorationTheme = InputDecorationTheme(
+    border: OutlineInputBorder(borderRadius: BorderRadius.circular(100)),
     prefixIconColor: tSecondaryColor,
     floatingLabelStyle: TextStyle(color: tSecondaryColor),
     focusedBorder: OutlineInputBorder(
-      borderSide: BorderSide(width: 2, color: tSecondaryColor),
+      borderRadius: BorderRadius.circular(100),
+      borderSide: const BorderSide(width: 2, color: tSecondaryColor),
     ),
   );
 
-  static InputDecorationTheme darkInputDecorationTheme =
-      const InputDecorationTheme(
-    border: OutlineInputBorder(),
+  static InputDecorationTheme darkInputDecorationTheme = InputDecorationTheme(
+    border: OutlineInputBorder(borderRadius: BorderRadius.circular(100)),
     prefixIconColor: tPrimaryColor,
     floatingLabelStyle: TextStyle(color: tPrimaryColor),
     focusedBorder: OutlineInputBorder(
-      borderSide: BorderSide(width: 2, color: tPrimaryColor),
+      borderRadius: BorderRadius.circular(100),
+      borderSide: const BorderSide(width: 2, color: tPrimaryColor),
     ),
   );
 }

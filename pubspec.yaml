@@ -20,6 +20,7 @@ dependencies:
   flutter_otp_text_field: ^1.1.1
   firebase_core: ^2.5.0
   firebase_auth: ^4.2.6
+  line_awesome_flutter: ^2.0.0
   # flutter_native_splash: ^2.2.16
   # loading_animation_widget: ^1.2.0+4
 
@@ -28,6 +29,7 @@ dev_dependencies:
     sdk: flutter
 
   flutter_lints: ^2.0.0
+
   # loading_animation_widget:
 
 # flutter_native_splash:
@@ -52,4 +54,5 @@ flutter:
     - assets/images/on_boarding_images/
     - assets/images/welcome_images/
     - assets/images/forget_password/
+    - assets/images/profile/
     - assets/logo/

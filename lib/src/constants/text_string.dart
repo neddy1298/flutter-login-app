@@ -78,3 +78,22 @@ const String tDashboardBannerTitle2 = "Python";
 const String tDashboardBannerSubTitle = "10 Lessons";
 const String tDashboardButton = "View All";
 const String tDashboardTopCourse = "Top Courses";
+
+// -- Profile Screen - Text
+const String tProfile = "Profile";
+const String tEditProfile = "Edit Profile";
+const String tLogoutDialog = "Logout";
+const String tProfileHeading = "Neddy AP";
+const String tProfileSubHeading = "neddy1298@gmail.com";
+
+// -- Menu Screen - Text
+const String tMenu5 = "Logout";
+const String tMenu1 = "Settings";
+const String tMenu2 = "Billing Details";
+const String tMenu3 = "User Management";
+const String tMenu4 = "Information";
+
+// -- Update Profile Screen - Text
+const String tDelete = "Delete";
+const String tJoined = "Joined";
+const String tJoinedAt = "05 October 2023";
