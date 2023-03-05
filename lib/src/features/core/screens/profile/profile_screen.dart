@@ -7,13 +7,13 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:line_awesome_flutter/line_awesome_flutter.dart';
 import 'package:login_app/src/constants/colors.dart';
 import 'package:login_app/src/constants/image_strings.dart';
-import 'package:login_app/src/constants/image_strings.dart';
-import 'package:login_app/src/constants/image_strings.dart';
-import 'package:login_app/src/constants/image_strings.dart';
 import 'package:login_app/src/constants/sizes.dart';
 import 'package:login_app/src/constants/text_string.dart';
+import 'package:login_app/src/features/core/screens/dashboard/dashboard.dart';
 import 'package:login_app/src/features/core/screens/profile/update_profile_sceen.dart';
 import 'package:login_app/src/features/core/screens/profile/widgets/profile_menu.dart';
+
+import '../../../../repository/authentication_repository/authentications_repository.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
@@ -26,7 +26,12 @@ class ProfileScreen extends StatelessWidget {
       backgroundColor: isDark ? tSecondaryColor : tPrimaryColor,
       appBar: AppBar(
         leading: IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pop(context);
+              Get.to(
+                () => Dashboard(),
+              );
+            },
             icon: const Icon(
               LineAwesomeIcons.angle_left,
               color: Colors.black,
@@ -160,7 +165,9 @@ class ProfileScreen extends StatelessWidget {
                 icon: LineAwesomeIcons.alternate_sign_out,
                 textColor: Colors.red,
                 endIcon: false,
-                onPress: () {},
+                onPress: () {
+                  AuthenticationRepository.instance.logout();
+                },
               ),
             ],
           ),
