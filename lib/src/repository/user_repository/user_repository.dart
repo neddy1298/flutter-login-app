@@ -13,7 +13,7 @@ class UserRepository extends GetxController {
         .collection("Users")
         .add(user.toJson())
         .whenComplete(
-          () => () => Get.snackbar("Success", "Akun berhasil di buat.",
+          () => Get.snackbar("Success", "Akun berhasil di buat.",
               snackPosition: SnackPosition.BOTTOM,
               backgroundColor: Colors.green.withOpacity(0.1),
               colorText: Colors.green),
