@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/instance_manager.dart';
 import 'package:login_app/src/features/authentication/controllers/signup_controller.dart';
+import 'package:login_app/src/features/authentication/models/user_model.dart';
 import 'package:login_app/src/features/authentication/screens/forget_password/forget_password_otp/otp_screen.dart';
 
 import '../../../../../constants/sizes.dart';
@@ -69,15 +70,23 @@ class SignUpFormWidget extends StatelessWidget {
               child: ElevatedButton(
                 onPressed: () {
                   if (_fromKey.currentState!.validate()) {
+                    // Email & password Authentication
                     // SignUpController.instace.registerUser(
                     //   controller.email.text.trim(),
                     //   controller.password.text.trim(),
                     // );
 
-                    SignUpController.instace
-                        .phoneAuthentication(controller.phoneNo.text.trim());
+                    // Phone Authentication
+                    // SignUpController.instace
+                    //     .phoneAuthentication(controller.phoneNo.text.trim());
 
-                    Get.to(() => const OTPScreen());
+                    final user = UserModel(
+                      email: controller.email.text.trim(),
+                      password: controller.password.text.trim(),
+                      fullName: controller.fullName.text.trim(),
+                      phoneNo: controller.phoneNo.text.trim(),
+                    );
+                    SignUpController.instace.createUser(user);
                   }
                 },
                 child: Text(tSignup.toUpperCase()),
